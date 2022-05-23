@@ -4,9 +4,11 @@ const cors = require('cors');
 const app = express();
 const movieRoutes = require('./routes/movie-routes.js');
 const mongoose = require('./persistence/database.js'); // This is connecting to our mongoDB 
+const { json } = require('express');
 
 // Middleware - removes any CORS errors we may get (cross origin request something)
 app.use(cors());
+app.use(express.json()); // Converting our JSON into a JS object for us to use
 
 // Middleware tells our app to use the movieRoutes file
 app.use('/movie', movieRoutes);
