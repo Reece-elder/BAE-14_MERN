@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import HelloWorld from './components/001-Components/HelloWorld';
+import './css/App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.. please.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Importing our HelloWorld component into our App.js */}
+      <HelloWorld/>
+      {/* All normal HTML elements are lowercase, capital letters let us know they are Components */}
     </div>
   );
 }
