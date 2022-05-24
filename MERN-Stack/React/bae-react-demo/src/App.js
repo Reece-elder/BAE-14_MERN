@@ -2,8 +2,10 @@ import AboutMe from './components/001-Components/AboutMe';
 import HelloWorld from './components/001-Components/HelloWorld';
 import ECommerceApp from './components/002-Hierarchy/E-Commerce-App';
 import WebPage from './components/002-Hierarchy/Exercise/WebPage';
+import PetManager from './components/003-Props/Exercise/PetManager';
 import ItemManager from './components/003-Props/ItemManager';
 import Manager from './components/003-Props/Manager';
+import StateManager from './components/004-State/StateManager';
 import './css/App.css';
 
 function App() {
@@ -19,7 +21,9 @@ function App() {
       {/* <WebPage/> */}
       {/* <Manager/> */}
       {/* 003 - Props */}
-      <ItemManager/>
+      {/* <ItemManager/> */}
+      {/* <PetManager/> */}
+      <StateManager/>
     </div>
   );
 }
