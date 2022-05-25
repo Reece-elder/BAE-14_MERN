@@ -7,6 +7,7 @@ import ItemManager from './components/003-Props/ItemManager';
 import Manager from './components/003-Props/Manager';
 import StateManagerTwo from './components/004-State/state-recap/StateManagerTwo';
 import StateManager from './components/004-State/StateManager';
+import Form from './components/005-Forms/Exercise/Form';
 import ManagerForm from './components/005-Forms/FormsWithState/ManagerForm';
 import PrintText from './components/005-Forms/PrintText';
 import './css/App.css';
@@ -29,7 +30,8 @@ function App() {
       {/* <StateManager/> */}
       {/* <StateManagerTwo/> */}
       {/* <PrintText/> */}
-      <ManagerForm/>
+      {/* <ManagerForm/> */}
+      <Form/>
     </div>
   );
 }
