@@ -5,6 +5,7 @@ import WebPage from './components/002-Hierarchy/Exercise/WebPage';
 import PetManager from './components/003-Props/Exercise/PetManager';
 import ItemManager from './components/003-Props/ItemManager';
 import Manager from './components/003-Props/Manager';
+import StateManagerTwo from './components/004-State/state-recap/StateManagerTwo';
 import StateManager from './components/004-State/StateManager';
 import './css/App.css';
 
@@ -23,7 +24,8 @@ function App() {
       {/* 003 - Props */}
       {/* <ItemManager/> */}
       {/* <PetManager/> */}
-      <StateManager/>
+      {/* <StateManager/> */}
+      <StateManagerTwo/>
     </div>
   );
 }
