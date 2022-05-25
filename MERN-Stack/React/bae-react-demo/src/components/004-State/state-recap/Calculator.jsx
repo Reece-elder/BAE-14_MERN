@@ -24,9 +24,30 @@ const Calculator = ({setCalValue}) => {
         });
     };
 
+    const subOne = () => {
+        setCalValue((x) => {
+            return x - 1;
+        });
+    };
+
+    const multiplyTwo = () => {
+        setCalValue((x) => {
+            return x * 2;
+        });
+    };
+
+    const divideTwo = () => {
+        setCalValue((x) => {
+            return x / 2;
+        });
+    };
+
     return ( 
     <>
         <button type="button" onClick={addOne}> Click me to add One! </button>
+        <button type="button" onClick={subOne}> Click me to Sub One! </button>
+        <button type="button" onClick={multiplyTwo}> Click me to Sub One! </button>
+        <button type="button" onClick={divideTwo}> Click me to Sub One! </button>
         <button type="button" onClick={() => {HelloWorld("Reece")}}> Click me to print name! </button>
         <button type="button" onClick={() => {HelloWorldArrow("ReeceTwo")}}> Click me to also print name! </button>
     </> 

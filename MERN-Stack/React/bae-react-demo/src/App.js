@@ -7,6 +7,7 @@ import ItemManager from './components/003-Props/ItemManager';
 import Manager from './components/003-Props/Manager';
 import StateManagerTwo from './components/004-State/state-recap/StateManagerTwo';
 import StateManager from './components/004-State/StateManager';
+import PrintText from './components/005-Forms/PrintText';
 import './css/App.css';
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
       {/* <ItemManager/> */}
       {/* <PetManager/> */}
       {/* <StateManager/> */}
-      <StateManagerTwo/>
+      {/* <StateManagerTwo/> */}
+      <PrintText/>
     </div>
   );
 }
