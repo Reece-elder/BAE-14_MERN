@@ -43,7 +43,8 @@ const Form = () => {
             <input type="text" id='number' name="number" onChange={(event) => {setData(event)}}/>
             <input type="text" id='address' name="address" onChange={(event) => {setData(event)}}/>
             <input type="text" id='image' name="image" onChange={(event) => {setData(event)}}/>
-            <input type="text" id='cute' name="cute" onChange={(event) => {setData(event)}}/>
+            <input id='cute' type="radio" name='cute'  value={true} onChange={(event) => {setData(event)}}/> True 
+            <input id='cute' type="radio" name='cute' value={false} onChange={(event) => {setData(event)}}/> False
             <button type='text' onClick={() => console.log(petData)}> Click me to print the data! </button>
             {/* <Pet name={petData.name} number={petData.number} address={petData.address} image={petData.image} cute={true}/> */}
             {/* Passing all of our data as a single object rather than individual states */}

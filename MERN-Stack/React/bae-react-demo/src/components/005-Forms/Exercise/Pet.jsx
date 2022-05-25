@@ -1,6 +1,8 @@
 // We're not passing in props which is made up of attributes props -> name
 // props -> data -> name
 const Pet = ({data}) => {
+    console.log(data);
+    console.log(data.name);
 const {name, number, address, image, cute} = data;
 
 

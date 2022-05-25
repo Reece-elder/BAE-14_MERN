@@ -10,6 +10,7 @@ import StateManager from './components/004-State/StateManager';
 import Form from './components/005-Forms/Exercise/Form';
 import ManagerForm from './components/005-Forms/FormsWithState/ManagerForm';
 import PrintText from './components/005-Forms/PrintText';
+import PizzaForm from './components/006-PizzaExercise/PizzaForm';
 import './css/App.css';
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
       {/* <StateManagerTwo/> */}
       {/* <PrintText/> */}
       {/* <ManagerForm/> */}
-      <Form/>
+      {/* <Form/> */}
+      <PizzaForm/>
     </div>
   );
 }
