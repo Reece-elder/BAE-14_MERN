@@ -47,15 +47,7 @@ const PizzaForm = () => {
             <button type="button" onClick={addToArray}> Click to add Order! </button>
             <button type="button" onClick={() => console.log(pizzaArray)}> Print out the orders! </button>
 
-            {/* Array.map is used to loop through the array and returns an object */}
-            {
-                pizzaArray.map((pizza) => {
-                    // Important you remember to return this component!
-                    return <PizzaOrder data={pizza}/>
-                })
-            }
         </>
-        // Exercise - Convert your Pizza Order into returning an array of data like above
      );
 }
  
