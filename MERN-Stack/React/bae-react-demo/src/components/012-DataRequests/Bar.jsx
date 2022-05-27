@@ -7,12 +7,17 @@ const Bar = () => {
     // State
     const [beerList, setBeerList] = useState([]); 
     const [loaded, setLoaded] = useState(false); 
-    // const [fetch, setFetch] = useState(true); 
+    // const [fetch, setFetch] = useState(true);
+    const [name, setName] = useState("");
+    const [job, setJob] = useState(""); 
 
     // UseEffect
     useEffect(() => {
-        setTimeout(() => {
-            // axios.get(URL we are searching for) - axios will return a promise (data to be fulfilled)
+        setTimeout(getData, 2000)
+    },[]);
+
+    // This method runs when the page loads, to show the user ALL of the data 
+    const getData = () => {
             axios.get("https://api.punkapi.com/v2/beers") 
             // .then() - whatever the previous function returns, chuck it in here and do this with it
             .then((response) => {
@@ -22,8 +27,19 @@ const Bar = () => {
                 // Once the state for beerList has been set, we can setLoaded(true)
                 setLoaded(true);
             });
-        }, 2000)
-    },[]);
+    }
+
+    // Method to post data, will only post when the user clicks a button
+    const postData = () => {
+        // When we are posting we need to specify WHAT we are posting
+        // add it as a parameter after our url
+        axios.post("https://reqres.in/api/users", { // Passing in a new JS Object
+            name: name,
+            job: job
+        }).then((response) => {
+            console.log(response);
+        });
+    }
 
 
     // Check if our code has loaded or not, if the request hasn't loaded tell the user it is coming 
@@ -31,6 +47,9 @@ const Bar = () => {
     if(loaded){
         return ( 
             <div>
+                <input type="text" onChange={(event) => setName(event.target.value)} placeholder="Enter Name!"/>
+                <input type="text" onChange={(event) => setJob(event.target.value)} placeholder="Enter Job!"/>
+                <button type='button' onClick={postData}> Click me to post data! </button>
                 <h2> Bar </h2>
                 {
                     beerList.map((beer) => {
