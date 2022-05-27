@@ -15,6 +15,7 @@ import PizzaArrayForm from './components/007-Arrays-Objects/PizzaArrayForm';
 import Aquarium from './components/008-Rendering-Objects/Aquarium';
 import RoutingManager from './components/009-Routing/RoutingManager';
 import Clock from './components/011-UseEffect-Hooks/Clock';
+import Bar from './components/012-DataRequests/Bar';
 import './css/App.css';
 
 function App() {
@@ -42,7 +43,8 @@ function App() {
       {/* <Aquarium/> */}
 
       {/* <RoutingManager/> */}
-      <Clock/>
+      {/* <Clock/> */}
+      <Bar/>
     </div>
   );
 }
