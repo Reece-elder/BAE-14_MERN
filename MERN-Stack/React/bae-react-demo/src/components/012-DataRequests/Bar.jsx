@@ -13,8 +13,22 @@ const Bar = () => {
 
     // UseEffect
     useEffect(() => {
-        setTimeout(getData, 2000)
+        setTimeout(getDataAsync, 2000)
     },[]);
+
+    // .then() was used to make JS asynchronous, lets you return a promise and say 
+    // "when this function is done.. do this thing" - .then() can get pretty messy 
+
+    // Async and Await fix this problem, by making the code asychrnous without the need for .then()
+    // When making an async function, you need to specify it is async
+
+    const getDataAsync = async () => {
+        // await - don't move on from this line until this thing is finished
+        const data = await axios.get("https://api.punkapi.com/v2/beers");
+        console.log(data); // data is undefined.. because we haven't told it to wait for the info
+        setBeerList(data); // We won't get here, until the await is finished
+        setLoaded(true);
+    }
 
     // This method runs when the page loads, to show the user ALL of the data 
     const getData = () => {

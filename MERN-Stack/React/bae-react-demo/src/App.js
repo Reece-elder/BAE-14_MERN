@@ -17,6 +17,8 @@ import RoutingManager from './components/009-Routing/RoutingManager';
 import Clock from './components/011-UseEffect-Hooks/Clock';
 import Bar from './components/012-DataRequests/Bar';
 import './css/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import SimpleGrid from './components/013-React-Bootstrap/SimpleGrid';
 
 function App() {
   return (
@@ -45,6 +47,7 @@ function App() {
       {/* <RoutingManager/> */}
       {/* <Clock/> */}
       <Bar/>
+      {/* <SimpleGrid/> */}
     </div>
   );
 }
