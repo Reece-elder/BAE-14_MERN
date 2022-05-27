@@ -1,14 +1,5 @@
-import {useParams} from "react-router-dom";
-
 const Shop = () => {
-
-    // Will pull the id out of the URL
-    const {id} = useParams();
-
-    return (
-        <h2> Shop page of id: {id} </h2>
-    )
-
+    return ( <h2> This is the shop page! </h2> );
 }
-
+ 
 export default Shop;

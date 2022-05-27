@@ -13,6 +13,7 @@ import PrintText from './components/005-Forms/PrintText';
 import PizzaForm from './components/006-PizzaExercise/PizzaForm';
 import PizzaArrayForm from './components/007-Arrays-Objects/PizzaArrayForm';
 import Aquarium from './components/008-Rendering-Objects/Aquarium';
+import RoutingManager from './components/009-Routing/RoutingManager';
 import './css/App.css';
 
 function App() {
@@ -37,7 +38,9 @@ function App() {
       {/* <Form/> */}
       {/* <PizzaForm/> */}
       {/* <PizzaArrayForm/> */}
-      <Aquarium/>
+      {/* <Aquarium/> */}
+
+      <RoutingManager/>
     </div>
   );
 }
