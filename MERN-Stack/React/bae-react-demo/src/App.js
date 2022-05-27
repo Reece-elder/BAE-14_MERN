@@ -12,6 +12,7 @@ import ManagerForm from './components/005-Forms/FormsWithState/ManagerForm';
 import PrintText from './components/005-Forms/PrintText';
 import PizzaForm from './components/006-PizzaExercise/PizzaForm';
 import PizzaArrayForm from './components/007-Arrays-Objects/PizzaArrayForm';
+import Aquarium from './components/008-Rendering-Objects/Aquarium';
 import './css/App.css';
 
 function App() {
@@ -35,7 +36,8 @@ function App() {
       {/* <ManagerForm/> */}
       {/* <Form/> */}
       {/* <PizzaForm/> */}
-      <PizzaArrayForm/>
+      {/* <PizzaArrayForm/> */}
+      <Aquarium/>
     </div>
   );
 }
