@@ -21,7 +21,7 @@ const RoutingManager = () => {
                 {/* Path - URL path, element - What Component to render */}
                 <Route path="/home" element={<Home/>}/>
                 <Route path="/about" element={<AboutUs/>}/>
-                <Route path="/shop" element={<Shop/>}/>
+                <Route path="/shop/:itemId" element={<Shop/>}/>
             </Routes>
         </BrowserRouter>
 
