@@ -26,7 +26,7 @@ const Bar = () => {
         // await - don't move on from this line until this thing is finished
         const data = await axios.get("https://api.punkapi.com/v2/beers");
         console.log(data); // data is undefined.. because we haven't told it to wait for the info
-        setBeerList(data); // We won't get here, until the await is finished
+        setBeerList(data.data); // We won't get here, until the await is finished
         setLoaded(true);
     }
 
